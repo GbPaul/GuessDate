@@ -29,7 +29,7 @@
 <?php
 $servername = "localhost";
 $username = "YOUR USER NAME"; - it should be root if you have not set any
-$password = "Paul777";
+$password = "your Password";
 $dbname='day_game';
 
 // Create connection
