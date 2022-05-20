@@ -47,7 +47,8 @@ if ($conn->connect_error) {
 
 - Homepage
 
-#image.png
 
-- after starting the game
-  #image.png
+
+![image](https://user-images.githubusercontent.com/19783928/169557953-e956c1aa-83b9-4195-aa7f-1ac7cd4b611d.png)
+
+
