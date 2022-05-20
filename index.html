@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="public/styles/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="d-flex h-100 text-center text-white bg-dark">
+    <div class="container-fluid row justify-content-center my-5">
+      <div class="col-md-6 align-self-center">
+        <div id="random_date">
+          <h2>WeekDay Guess Game</h2>
+          <h3 id="date"></h3>
+        </div>
+        <div id="answer_container"></div>
+        <div class="my-4">
+          <div class="d-flex justify-content-center" id="game_controls">
+            <button type="button" class="btn btn-primary mx-4" id="start">
+              Start the Game
+            </button>
+            <div id="control_end"></div>
+          </div>
+        </div>
+        <div class="my-5">
+          <div class="current_games_results">
+            <h2>Current Game Result</h2>
+            <table
+              class="table table-dark table-bordered table-sm table-responsive"
+            >
+              <thead>
+                <tr>
+                  <th scope="col">Date</th>
+                  <th scope="col">Day of week (correct)</th>
+                  <th scope="col">Day of week (Your choice)</th>
+                  <th scope="col">Result</th>
+                </tr>
+              </thead>
+              <tbody id="game_results"></tbody>
+            </table>
+            <div class="d-flex justify-content-end">
+              <div
+                class="d-flex shadow-lg p-4 justify-content-between w-100"
+                id="total_results"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="recent_game_results">
+          <h2>Recent Game Results</h2>
+          <table
+            class="table table-dark table-bordered table-sm table-responsive"
+          >
+            <thead>
+              <tr>
+                <th scope="col">Game Name</th>
+                <th scope="col">Your score</th>
+                <th scope="col">Out of</th>
+              </tr>
+            </thead>
+            <tbody id="recent_results"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="public/js/render.js"></script>
+    <script src="public/js/index.js"></script>
+  </body>
+</html>
