@@ -1,6 +1,6 @@
 # Day of the week guessing game
 
-### To run this game you need have xampp installed in your local machine
+### To run this game you need to have xampp installed in your local machine
 
 # Steps to follow
 
