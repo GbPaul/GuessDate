@@ -45,6 +45,20 @@ if ($conn->connect_error) {
 
 > the above code is in the `connect.php` file
 
+# The goal is to build a simple game where a random date is displayed, and the user can guess
+what day of the week (Monday to Sunday) that date is.
+Within the game, there shall be
+• A way for the user to select what day the presented day is.
+• A log showing what date has been presented and what day the user chose and whether or not
+not the chosen day of the week is correct.
+• A counter of how many answers the user has had that is correct (e.g. 3 out of 7).
+• A way to reset the game to start over, removing previous answers and resetting the counter to 0.
+Dates must be randomly generated using php and it must be specified what date-span the
+game covers.
+• Control if the guessed day of the week matches the random date must be done with php.
+• At least one functionality must be using ajax allowing the user interface to be updated
+without reloading the page.
+
 - Homepage
 
 
